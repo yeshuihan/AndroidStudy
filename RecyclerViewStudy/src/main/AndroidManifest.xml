@@ -4,5 +4,6 @@
 
     <application>
         <activity android:name=".RecyclerViewStudyActivity" />
+        <activity android:name=".pictureshow.PictureShowActivity" />
     </application>
 </manifest>
