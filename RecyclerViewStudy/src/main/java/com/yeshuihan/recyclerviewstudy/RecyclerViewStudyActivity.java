@@ -2,6 +2,7 @@ package com.yeshuihan.recyclerviewstudy;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,5 +23,12 @@ public class RecyclerViewStudyActivity extends AppCompatActivity {
         recyclerView.setAdapter(new CustomAdapter());
         recyclerView.addItemDecoration(new CustomItemDecoration(this));
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+    }
+
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+//        super.dispatchTouchEvent(ev);
+        Log.i("fzw", "dispatchTouchEvent");
+        return false;
     }
 }
